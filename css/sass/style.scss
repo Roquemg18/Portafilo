@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+$red: #aa1111;
+$fondo: #ebebeb;
+
+body {
+  background-color: $fondo;
+}
+section {
+  height: 100vh;
+  text-align: center;
+}
+.navDesktop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  h1 {
+    margin-left: 15%;
+    font-size: 3rem;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    text-decoration: none;
+    list-style: none;
+    margin-left: 30%;
+
+    li {
+      a {
+        text-decoration: none;
+        color: #000;
+        font-weight: 500;
+        font-size: 1.5rem;
+      }
+      a:hover {
+        text-decoration: underline;
+        color: $red;
+      }
+    }
+  }
+}
+.mainDesktop {
+  display: flex;
+  flex-direction: row;
+}
+.perfil {
+  width: 600px;
+  height: 600px;
+  margin-left: 200px;
+  margin-top: 100px;
+}
+
+.mainInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-left: 100px;
+  margin-top: 250px;
+
+  .text {
+    font-size: 2.5rem;
+    text-align: center;
+    h3 {
+      color: $red;
+    }
+  }
+}
+.containerButtonMain {
+  display: flex;
+  flex-direction: column;
+}
+.textButtonMain {
+  margin-right: 10px;
+  width: 180px;
+  height: 60px;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  background-color: white;
+}
+.textButtonMain:hover {
+  background-color: $red;
+  color: white;
+  cursor: pointer;
+}
+img {
+  width: 60px;
+  height: 60px;
+}
+
+.iconButtonMain {
+  background-color: transparent;
+  border: none;
+  margin: 10px;
+  margin-right: 10px;
+  width: 180px;
+  height: 40px;
+
+  a {
+    height: 80px;
+    width: 80px;
+  }
+}
+.iconButtonMain:hover {
+  cursor: pointer;
+}
+
+/*style about*/
+
+.sectionAbout {
+  display: flex;
+  flex-direction: column;
+  h1 {
+    font-size: 4rem;
+    align-items: center;
+  }
+}
+.divAbout {
+  display: flex;
+}
+
+.containerAboutDesktop {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.perfil2 {
+  width: 530px;
+  height: 660px;
+  border-radius: 50%;
+  margin: 50px 80px 0px 150px;
+
+  border: 5px solid black;
+}
+.perfil2:hover {
+  border: 7px solid white;
+}
+.containerEE {
+  display: flex;
+  h3 {
+    color: $red;
+    font-size: 2rem;
+  }
+}
+.containerExperience,
+.containerEducation {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  width: 400px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 1rem;
+  align-items: center;
+  margin: 30px;
+  padding: 20px;
+  h4 {
+    font-size: 1.2rem;
+  }
+}
+
+.containerDescription {
+  width: 800px;
+  height: 160px;
+  border: none;
+  margin-left: 40px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: black;
+  text-shadow: 2px 1px 2px black;
+}
+
+/*expreince style*/
+
+h1 {
+  font-size: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+.about-containers {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  h2 {
+    font-size: 3rem;
+  }
+}
+.details-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  font-size: 2rem;
+}
+
+.article-container {
+  width: 600px;
+  height: 100%;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 1rem;
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+  article:hover {
+    color: $red;
+    text-decoration: underline;
+  }
+}
+.icon:hover {
+  border-radius: 50%;
+  background-color: $red;
+}
+
+.itemContainerId {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 530px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10%;
+  padding: 25px;
+  background-color: white;
+  color: $red;
+}
+.project-img {
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    width: 100%;
+    height: 80px;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 10%;
+  }
+}
+.project-buttons {
+  a {
+    width: 100%;
+    height: 25px;
+    background-color: $red;
+    border-radius: 1rem;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  a:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+/*style contact*/
+.contactSection {
+  height: 40vh;
+}
+.containerContact {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 2rem;
+  width: 600px;
+  align-items: center;
+  padding: 10px;
+  margin: auto;
+  list-style: none;
+  a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  h3 {
+    color: gray;
+    font-weight: bold;
+  }
+}
