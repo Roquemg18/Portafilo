@@ -15,8 +15,20 @@ body {
 section {
   height: 100vh;
   text-align: center;
+  background-color: $fondo;
+  display: flex;
+  position: sticky;
+  top: 0;
 }
+
 .navDesktop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  justify-content: space-around;
+  transition: 0.7s;
+  z-index: 10;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -26,6 +38,38 @@ section {
     font-size: 3rem;
   }
 
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    text-decoration: none;
+    list-style: none;
+    margin-left: 30%;
+
+    li {
+      a {
+        text-decoration: none;
+        color: #000;
+        font-weight: 500;
+        font-size: 1.5rem;
+      }
+      a:hover {
+        text-decoration: underline;
+        color: $red;
+      }
+    }
+  }
+}
+.abajo {
+  background-color: $red;
+  color: white;
+  height: 80px;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-top: 50px;
+  }
   ul {
     display: flex;
     flex-direction: row;
@@ -138,14 +182,10 @@ img {
 .perfil2 {
   width: 530px;
   height: 660px;
-  border-radius: 50%;
+  border-radius: 3rem;
   margin: 50px 80px 0px 150px;
+}
 
-  border: 5px solid black;
-}
-.perfil2:hover {
-  border: 7px solid white;
-}
 .containerEE {
   display: flex;
   h3 {
@@ -302,8 +342,10 @@ h1 {
 .footer {
   display: flex;
   justify-content: center;
+  position: sticky;
+  top: 0;
   h3 {
-    color: gray;
+    color: black;
     font-weight: bold;
   }
 }
