@@ -1,10 +1,5 @@
 window.sr = ScrollReveal();
 
-sr.reveal(".navDesktop", {
-  duration: 3000,
-  origin: "bottom",
-  distance: "-100px",
-});
 sr.reveal(".mainInfo", {
   duration: 5000,
   origin: "right",

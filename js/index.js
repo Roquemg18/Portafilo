@@ -2,7 +2,7 @@ const itemContainerId = document.querySelector("#itemContainerId");
 
 async function getProjects() {
   try {
-    const response = await fetch("../json/projects.json");
+    const response = await fetch("../assets/json/projects.json");
     const data = await response.json();
     return data;
   } catch (error) {

@@ -8,6 +8,8 @@
 
 $red: #aa1111;
 $fondo: #ebebeb;
+$negro: black;
+$blanco: white;
 
 body {
   background-color: $fondo;
@@ -17,10 +19,12 @@ section {
   text-align: center;
   background-color: $fondo;
   display: flex;
-  position: sticky;
-  top: 0;
 }
 
+/*navBar desktop style*/
+.navbar {
+  display: none;
+}
 .navDesktop {
   position: fixed;
   top: 0;
@@ -33,9 +37,12 @@ section {
   flex-direction: row;
   align-items: center;
 
-  h1 {
+  a {
     margin-left: 15%;
     font-size: 3rem;
+    color: $negro;
+    text-decoration: none;
+    font-weight: bold;
   }
 
   ul {
@@ -50,7 +57,7 @@ section {
     li {
       a {
         text-decoration: none;
-        color: #000;
+        color: $negro;
         font-weight: 500;
         font-size: 1.5rem;
       }
@@ -63,12 +70,13 @@ section {
 }
 .abajo {
   background-color: $red;
-  color: white;
+  color: $blanco;
   height: 80px;
 
-  h1 {
-    font-size: 2.5rem;
-    margin-top: 50px;
+  a {
+    font-size: 3rem;
+    margin-top: 10px;
+    color: $blanco;
   }
   ul {
     display: flex;
@@ -82,17 +90,60 @@ section {
     li {
       a {
         text-decoration: none;
-        color: #000;
+        color: $negro;
         font-weight: 500;
         font-size: 1.5rem;
       }
       a:hover {
         text-decoration: underline;
-        color: $red;
+        color: $blanco;
       }
     }
   }
 }
+
+/* .navbar {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+}
+
+.navbar-brand {
+  font-size: 3rem;
+  margin-left: 10%;
+  margin-right: 50%;
+}
+.navbar-collapse {
+  font-size: 1.6rem;
+  color: $negro;
+} */
+
+@media (max-width: 768px) {
+  .navDesktop {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+    font-weight: bold;
+  }
+  .navbar-brand {
+    font-size: 2rem;
+  }
+  .navbar-nav {
+    a {
+      font-size: 1.4rem;
+      color: $negro;
+      font-weight: bold;
+    }
+    a:hover {
+      color: $red;
+    }
+  }
+}
+/*main desktop styles*/
+
 .mainDesktop {
   display: flex;
   flex-direction: row;
@@ -111,15 +162,27 @@ section {
   margin: auto;
   margin-left: 100px;
   margin-top: 250px;
-
-  .text {
-    font-size: 2.5rem;
-    text-align: center;
-    h3 {
-      color: $red;
-    }
+}
+.Text {
+  text-align: center;
+  h6 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 0.2rem;
+  }
+  h2 {
+    font-weight: bold;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+  }
+  h3 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: $red;
+    margin-bottom: 1rem;
   }
 }
+
 .containerButtonMain {
   display: flex;
   flex-direction: column;
@@ -127,22 +190,25 @@ section {
 .textButtonMain {
   margin-right: 10px;
   width: 180px;
-  height: 60px;
+  height: 80px;
+  padding: 8px;
   border: none;
   border-radius: 2rem;
   font-size: 1.5rem;
-  background-color: white;
+  background-color: $blanco;
+  text-decoration: none;
+  color: $negro;
 }
 .textButtonMain:hover {
   background-color: $red;
-  color: white;
+  color: $blanco;
   cursor: pointer;
 }
+
 img {
   width: 60px;
   height: 60px;
 }
-
 .iconButtonMain {
   background-color: transparent;
   border: none;
@@ -150,14 +216,54 @@ img {
   margin-right: 10px;
   width: 180px;
   height: 40px;
+  img {
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+  }
 
   a {
     height: 80px;
     width: 80px;
+    margin-top: 20px;
   }
 }
 .iconButtonMain:hover {
   cursor: pointer;
+}
+
+/*main responsive style*/
+
+@media only screen and (max-width: 600px) {
+  .mainDesktop {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: auto;
+    margin-bottom: 120px;
+    box-sizing: border-box;
+
+    img {
+      margin: auto;
+      width: 400px;
+      height: 400px;
+    }
+  }
+  .mainInfo {
+    margin: auto;
+    margin-top: 10px;
+  }
+  .iconButtonMain {
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+    img {
+      margin: auto;
+      width: 60px;
+      height: 60px;
+      margin-top: 20px;
+    }
+  }
 }
 
 /*style about*/
@@ -217,16 +323,56 @@ img {
   margin-left: 40px;
   font-size: 1.8rem;
   font-weight: bold;
-  color: black;
-  text-shadow: 2px 1px 2px black;
+  color: $negro;
+  text-shadow: 2px 1px 2px $negro;
+}
+/* about style responsive*/
+
+@media (max-width: 768px) {
+  .sectionAbout {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 100px;
+    padding: 10;
+    box-sizing: border-box;
+  }
+  .divAbout {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .perfil2 {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+  .containerEE {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    
+  }
+  .containerEducation, .containerExperience,.containerDescription {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
 }
 
-/*expreince style*/
+/*experience style*/
 
 h1 {
   font-size: 4rem;
   margin-top: 2rem;
   margin-bottom: 4rem;
+}
+.titleExperience {
+  margin-bottom: 1rem;
 }
 .about-containers {
   display: flex;
@@ -247,7 +393,7 @@ h1 {
   width: 600px;
   height: 100%;
   padding: 20px;
-  border: 1px solid black;
+  border: 1px solid $negro;
   border-radius: 1rem;
   display: flex;
   text-align: initial;
@@ -273,6 +419,28 @@ h1 {
   gap: 10rem;
 }
 
+/*experience responsive style*/
+@media (max-width: 768px) {
+  #Experience,
+  .about-containers {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 200px;
+    padding: 20px;
+  }
+  .article-container {
+    width: 100%;
+    height: 100%;
+    margin:auto ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+}
+/*style projects*/
+
 .project {
   display: flex;
   flex-direction: column;
@@ -282,7 +450,7 @@ h1 {
   padding: 10px;
   border-radius: 10%;
   padding: 25px;
-  background-color: white;
+  background-color: $blanco;
   color: $red;
 }
 .project-img {
@@ -305,38 +473,91 @@ h1 {
     background-color: $red;
     border-radius: 1rem;
     padding: 10px 20px;
-    color: white;
+    color: $blanco;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.3rem;
   }
   a:hover {
-    background-color: black;
-    color: white;
+    background-color: $negro;
+    color: $blanco;
     cursor: pointer;
   }
 }
+/*style projects responsive*/
 
+@media (max-width: 768px) {
+  .sectionProjects {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .itemContainerId {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .project {
+    margin: 40px;
+  }
+}
 /*style contact*/
 .contactSection {
-  height: 40vh;
+  height: 90vh;
 }
 .containerContact {
   display: flex;
   justify-content: center;
-  border: 1px solid black;
+  border: 1px solid $negro;
   border-radius: 2rem;
   width: 600px;
   align-items: center;
   padding: 10px;
   margin: auto;
   list-style: none;
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    img {
+      margin-right: 5px;
+    }
+  }
   a {
     font-size: 1.2rem;
     font-weight: bold;
-    color: black;
+    color: $negro;
     text-decoration: none;
     font-weight: bold;
+  }
+}
+
+/*style contact responsive*/
+
+@media (max-width: 600px) {
+  .contactSection{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+  .containerContact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 400px;
+    margin: auto
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
 .footer {
@@ -345,7 +566,7 @@ h1 {
   position: sticky;
   top: 0;
   h3 {
-    color: black;
+    color: $negro;
     font-weight: bold;
   }
 }

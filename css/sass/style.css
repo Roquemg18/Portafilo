@@ -15,8 +15,11 @@ section {
   text-align: center;
   background-color: #ebebeb;
   display: flex;
-  position: sticky;
-  top: 0;
+}
+
+/*navBar desktop style*/
+.navbar {
+  display: none;
 }
 
 .navDesktop {
@@ -31,9 +34,12 @@ section {
   flex-direction: row;
   align-items: center;
 }
-.navDesktop h1 {
+.navDesktop a {
   margin-left: 15%;
   font-size: 3rem;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
 }
 .navDesktop ul {
   display: flex;
@@ -46,7 +52,7 @@ section {
 }
 .navDesktop ul li a {
   text-decoration: none;
-  color: #000;
+  color: black;
   font-weight: 500;
   font-size: 1.5rem;
 }
@@ -60,9 +66,10 @@ section {
   color: white;
   height: 80px;
 }
-.abajo h1 {
-  font-size: 2.5rem;
-  margin-top: 50px;
+.abajo a {
+  font-size: 3rem;
+  margin-top: 10px;
+  color: white;
 }
 .abajo ul {
   display: flex;
@@ -75,15 +82,53 @@ section {
 }
 .abajo ul li a {
   text-decoration: none;
-  color: #000;
+  color: black;
   font-weight: 500;
   font-size: 1.5rem;
 }
 .abajo ul li a:hover {
   text-decoration: underline;
-  color: #aa1111;
+  color: white;
 }
 
+/* .navbar {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+}
+
+.navbar-brand {
+  font-size: 3rem;
+  margin-left: 10%;
+  margin-right: 50%;
+}
+.navbar-collapse {
+  font-size: 1.6rem;
+  color: $negro;
+} */
+@media (max-width: 768px) {
+  .navDesktop {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+    font-weight: bold;
+  }
+  .navbar-brand {
+    font-size: 2rem;
+  }
+  .navbar-nav a {
+    font-size: 1.4rem;
+    color: black;
+    font-weight: bold;
+  }
+  .navbar-nav a:hover {
+    color: #aa1111;
+  }
+}
+/*main desktop styles*/
 .mainDesktop {
   display: flex;
   flex-direction: row;
@@ -104,12 +149,25 @@ section {
   margin-left: 100px;
   margin-top: 250px;
 }
-.mainInfo .text {
-  font-size: 2.5rem;
+
+.Text {
   text-align: center;
 }
-.mainInfo .text h3 {
+.Text h6 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 0.2rem;
+}
+.Text h2 {
+  font-weight: bold;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+.Text h3 {
+  font-size: 3rem;
+  font-weight: bold;
   color: #aa1111;
+  margin-bottom: 1rem;
 }
 
 .containerButtonMain {
@@ -120,11 +178,14 @@ section {
 .textButtonMain {
   margin-right: 10px;
   width: 180px;
-  height: 60px;
+  height: 80px;
+  padding: 8px;
   border: none;
   border-radius: 2rem;
   font-size: 1.5rem;
   background-color: white;
+  text-decoration: none;
+  color: black;
 }
 
 .textButtonMain:hover {
@@ -146,15 +207,52 @@ img {
   width: 180px;
   height: 40px;
 }
+.iconButtonMain img {
+  width: 60px;
+  height: 60px;
+  margin-top: 20px;
+}
 .iconButtonMain a {
   height: 80px;
   width: 80px;
+  margin-top: 20px;
 }
 
 .iconButtonMain:hover {
   cursor: pointer;
 }
 
+/*main responsive style*/
+@media only screen and (max-width: 600px) {
+  .mainDesktop {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: auto;
+    margin-bottom: 120px;
+    box-sizing: border-box;
+  }
+  .mainDesktop img {
+    margin: auto;
+    width: 400px;
+    height: 400px;
+  }
+  .mainInfo {
+    margin: auto;
+    margin-top: 10px;
+  }
+  .iconButtonMain {
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+  }
+  .iconButtonMain img {
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+  }
+}
 /*style about*/
 .sectionAbout {
   display: flex;
@@ -219,11 +317,49 @@ img {
   text-shadow: 2px 1px 2px black;
 }
 
-/*expreince style*/
+/* about style responsive*/
+@media (max-width: 768px) {
+  .sectionAbout {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 100px;
+    padding: 10;
+    box-sizing: border-box;
+  }
+  .divAbout {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .perfil2 {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+  .containerEE {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .containerEducation, .containerExperience, .containerDescription {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
+/*experience style*/
 h1 {
   font-size: 4rem;
   margin-top: 2rem;
   margin-bottom: 4rem;
+}
+
+.titleExperience {
+  margin-bottom: 1rem;
 }
 
 .about-containers {
@@ -273,6 +409,26 @@ h1 {
   gap: 10rem;
 }
 
+/*experience responsive style*/
+@media (max-width: 768px) {
+  #Experience,
+  .about-containers {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 200px;
+    padding: 20px;
+  }
+  .article-container {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/*style projects*/
 .project {
   display: flex;
   flex-direction: column;
@@ -315,9 +471,28 @@ h1 {
   cursor: pointer;
 }
 
+/*style projects responsive*/
+@media (max-width: 768px) {
+  .sectionProjects {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .itemContainerId {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .project {
+    margin: 40px;
+  }
+}
 /*style contact*/
 .contactSection {
-  height: 40vh;
+  height: 90vh;
 }
 
 .containerContact {
@@ -331,6 +506,15 @@ h1 {
   margin: auto;
   list-style: none;
 }
+.containerContact li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.containerContact li img {
+  margin-right: 5px;
+}
 .containerContact a {
   font-size: 1.2rem;
   font-weight: bold;
@@ -339,6 +523,28 @@ h1 {
   font-weight: bold;
 }
 
+/*style contact responsive*/
+@media (max-width: 600px) {
+  .contactSection {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+  .containerContact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 400px;
+    margin: auto;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
 .footer {
   display: flex;
   justify-content: center;
