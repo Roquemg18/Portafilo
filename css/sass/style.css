@@ -7,14 +7,69 @@
 }
 
 body {
-  background-color: #ebebeb;
+  background-color: rgb(245, 248, 247);
+  transition: 0.5s ease all;
+}
+body.dark {
+  background-color: black;
+}
+body.dark h2,
+body.dark h6 {
+  color: white;
+}
+body.dark .perfil {
+  background-color: white;
+  border-radius: 50%;
+  border: none;
+}
+body.dark img {
+  background-color: white;
+  border-radius: 50%;
+}
+body.dark nav a {
+  color: white;
+}
+body.dark nav ul li a {
+  color: white;
+}
+body.dark .divAbout img {
+  border-radius: 3rem;
+}
+body.dark section h1 {
+  color: white;
+}
+body.dark section .containerDescription {
+  color: white;
+}
+body.dark section .containerExperience h4,
+body.dark section .containerEducation h4 {
+  color: white;
+}
+body.dark section .article-container h3,
+body.dark section .article-container p {
+  color: white;
+}
+body.dark section .containerContact {
+  border: 1px solid white;
+}
+body.dark section .containerContact a {
+  color: white;
+}
+body.dark section .project-img h1 {
+  color: #aa1111;
+}
+body.dark .footer h3 {
+  color: white;
 }
 
 section {
   height: 100vh;
   text-align: center;
-  background-color: #ebebeb;
   display: flex;
+}
+
+h1.dark {
+  color: white;
 }
 
 /*navBar desktop style*/
@@ -90,29 +145,61 @@ section {
   text-decoration: underline;
   color: white;
 }
+.abajo .switch {
+  background-color: black;
+  color: white;
+}
+.abajo .switch::after {
+  background-color: white;
+}
 
-/* .navbar {
-  background-color: transparent;
-  position: fixed;
+.switch {
+  background-color: black;
+  color: white;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+}
+.switch::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-color: white;
   top: 0;
   left: 0;
-
+  right: unset;
+  border-radius: 100px;
+  transition: 0.3s ease all;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.switch.active {
+  background-color: white;
+  color: black;
+}
+.switch.active::after {
+  right: 0;
+  left: unset;
+}
+.switch span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background: none;
+  counter-reset: black;
 }
 
-.navbar-brand {
-  font-size: 3rem;
-  margin-left: 10%;
-  margin-right: 50%;
-}
-.navbar-collapse {
-  font-size: 1.6rem;
-  color: $negro;
-} */
-@media (max-width: 768px) {
+@media (max-width: 1250px) {
   .navDesktop {
     display: none;
   }
   .navbar {
+    width: 100%;
     display: flex;
     font-weight: bold;
   }
@@ -223,7 +310,7 @@ img {
 }
 
 /*main responsive style*/
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .mainDesktop {
     display: flex;
     flex-direction: column;
@@ -263,7 +350,7 @@ img {
   align-items: center;
 }
 
-.divAbout {
+.sectionAbout .divAbout {
   display: flex;
 }
 
@@ -326,7 +413,6 @@ img {
     width: 100%;
     margin-bottom: 100px;
     padding: 10;
-    box-sizing: border-box;
   }
   .divAbout {
     display: flex;
@@ -344,7 +430,9 @@ img {
     width: 100%;
     height: 100%;
   }
-  .containerEducation, .containerExperience, .containerDescription {
+  .containerEducation,
+  .containerExperience,
+  .containerDescription {
     width: 100%;
     height: 100%;
     margin: auto;
@@ -410,13 +498,14 @@ h1 {
 }
 
 /*experience responsive style*/
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   #Experience,
   .about-containers {
     display: flex;
     flex-direction: column;
     margin-bottom: 200px;
     padding: 20px;
+    height: 100%;
   }
   .article-container {
     width: 100%;
@@ -472,6 +561,14 @@ h1 {
 }
 
 /*style projects responsive*/
+@media (max-width: 1300) {
+  .sectionProjects {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+}
 @media (max-width: 768px) {
   .sectionProjects {
     width: 100%;

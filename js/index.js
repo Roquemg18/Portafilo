@@ -1,7 +1,14 @@
+const btnSwitch = document.getElementById("switch");
+
+btnSwitch.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+  btnSwitch.classList.toggle("active");
+});
 const itemContainerId = document.querySelector("#itemContainerId");
 
 async function getProjects() {
   try {
+    //busca los datos de los projectos y los asigna a una variable
     const response = await fetch("../assets/json/projects.json");
     const data = await response.json();
     return data;
@@ -20,7 +27,9 @@ function renderProjects(projects) {
     const newProject = document.createElement("div");
     newProject.className = "project";
     newProject.setAttribute("data-id", project.id);
-    newProject.innerHTML = `
+    newProject.innerHTML =
+      //estructura de la cart que muesta el projecto
+      `
       <div class="project-img">
         <img src="${project.img}" alt="${project.title}">
         <h1>${project.title}</h1>
@@ -37,10 +46,4 @@ render();
 
 renderProjects();
 
-// funcion menu
-function toggleMenu() {
-  const menu = document.querySelector(".menu-links");
-  const icon = document.querySelector(".hamburger-icon");
-  menu.classList.toggle("open");
-  icon.classList.toggle("open");
-}
+//modo oscuro
