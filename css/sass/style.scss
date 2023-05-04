@@ -513,14 +513,13 @@ h1 {
   flex-direction: row;
   gap: 2.5rem;
   justify-content: space-around;
+  font-weight: bold;
   article:hover {
     color: $red;
-    text-decoration: underline;
   }
-}
-.icon:hover {
-  border-radius: 50%;
-  background-color: $red;
+  .round-logo {
+    border-radius: 50%;
+  }
 }
 
 .itemContainerId {

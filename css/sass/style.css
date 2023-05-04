@@ -490,15 +490,13 @@ h1 {
   flex-direction: row;
   gap: 2.5rem;
   justify-content: space-around;
+  font-weight: bold;
 }
 .article-container article:hover {
   color: #aa1111;
-  text-decoration: underline;
 }
-
-.icon:hover {
+.article-container .round-logo {
   border-radius: 50%;
-  background-color: #aa1111;
 }
 
 .itemContainerId {
