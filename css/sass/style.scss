@@ -57,11 +57,14 @@ body {
       }
       .containerExperience,
       .containerEducation {
+        border: 1px solid $blanco;
         h4 {
           color: $blanco;
         }
       }
+
       .article-container {
+        border: 1px solid $blanco;
         h3,
         p {
           color: $blanco;
@@ -225,12 +228,17 @@ h1 {
 }
 
 @media (max-width: 1250px) {
+  header {
+    position: fixed;
+    background-color: rgb(245, 248, 247, 0.8);
+    width: 100%;
+  }
   .navDesktop {
     display: none;
   }
   .navbar {
+    display: inline-block;
     width: 100%;
-    display: flex;
     font-weight: bold;
   }
   .navbar-brand {

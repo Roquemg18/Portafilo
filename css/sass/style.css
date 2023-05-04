@@ -41,9 +41,16 @@ body.dark section h1 {
 body.dark section .containerDescription {
   color: white;
 }
+body.dark section .containerExperience,
+body.dark section .containerEducation {
+  border: 1px solid white;
+}
 body.dark section .containerExperience h4,
 body.dark section .containerEducation h4 {
   color: white;
+}
+body.dark section .article-container {
+  border: 1px solid white;
 }
 body.dark section .article-container h3,
 body.dark section .article-container p {
@@ -195,12 +202,17 @@ h1.dark {
 }
 
 @media (max-width: 1250px) {
+  header {
+    position: fixed;
+    background-color: rgba(245, 248, 247, 0.8);
+    width: 100%;
+  }
   .navDesktop {
     display: none;
   }
   .navbar {
+    display: inline-block;
     width: 100%;
-    display: flex;
     font-weight: bold;
   }
   .navbar-brand {
