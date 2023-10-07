@@ -70,7 +70,7 @@ body.dark .footer h3 {
 }
 
 section {
-  height: 100vh;
+  height: 100%;
   text-align: center;
   display: flex;
 }
@@ -97,7 +97,7 @@ h1.dark {
   align-items: center;
 }
 .navDesktop a {
-  margin-left: 15%;
+  margin-left: 1rem;
   font-size: 3rem;
   color: black;
   text-decoration: none;
