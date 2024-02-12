@@ -7,9 +7,11 @@
         "id":"1"
     },
     {
-        "title": "Project Statistical Analysis",
-        "img":"https://st3.depositphotos.com/1007566/18705/v/600/depositphotos_187054940-stock-illustration-statistics-data-business-image.jpg",
-        "id":"2"
+        "title": "Chat real time",
+        "img":"../img/ChatRealTime.jpg",
+        "id":"2",
+        "urlGitHub":"https://github.com/Roquemg18/project-2-chatRealTime.git",
+        "urlServer":"https://chat-realtime-a6y0.onrender.com"
     },
     {
         "title": "Project Calculator",
