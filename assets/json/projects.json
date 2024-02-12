@@ -8,7 +8,7 @@
     },
     {
         "title": "Chat real time",
-        "img":"../img/ChatRealTime.jpg",
+        "img":"./img/ChatRealTime.jpg",
         "id":"2",
         "urlGitHub":"https://github.com/Roquemg18/project-2-chatRealTime.git",
         "urlServer":"https://chat-realtime-a6y0.onrender.com"
