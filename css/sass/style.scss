@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -14,12 +15,15 @@ $blanco: white;
 body {
   background-color: $fondo;
   transition: 0.5s ease all;
+
   &.dark {
     background-color: $negro;
+
     h2,
     h6 {
       color: $blanco;
     }
+
     .perfil {
       background-color: $blanco;
       border-radius: 50%;
@@ -28,13 +32,13 @@ body {
 
     img {
       background-color: $blanco;
-      border-radius: 50%;
     }
 
     nav {
       a {
         color: $blanco;
       }
+
       ul {
         li {
           a {
@@ -43,21 +47,26 @@ body {
         }
       }
     }
+
     .divAbout {
       img {
         border-radius: 3rem;
       }
     }
+
     section {
       h1 {
         color: $blanco;
       }
+
       .containerDescription {
         color: $blanco;
       }
+
       .containerExperience,
       .containerEducation {
         border: 1px solid $blanco;
+
         h4 {
           color: $blanco;
         }
@@ -65,23 +74,28 @@ body {
 
       .article-container {
         border: 1px solid $blanco;
+
         h3,
         p {
           color: $blanco;
         }
       }
+
       .containerContact {
         border: 1px solid $blanco;
+
         a {
           color: $blanco;
         }
       }
+
       .project-img {
         h1 {
           color: $red;
         }
       }
     }
+
     .footer {
       h3 {
         color: $blanco;
@@ -89,20 +103,24 @@ body {
     }
   }
 }
+
 section {
   height: 100%;
   text-align: center;
   display: flex;
 }
+
 h1 {
   &.dark {
     color: white;
   }
 }
+
 /*navBar desktop style*/
 .navbar {
   display: none;
 }
+
 .navDesktop {
   position: fixed;
   top: 0;
@@ -139,6 +157,7 @@ h1 {
         font-weight: 500;
         font-size: 1.5rem;
       }
+
       a:hover {
         text-decoration: underline;
         color: $red;
@@ -146,6 +165,7 @@ h1 {
     }
   }
 }
+
 .abajo {
   background-color: $red;
   color: $blanco;
@@ -156,6 +176,7 @@ h1 {
     margin-top: 10px;
     color: $blanco;
   }
+
   ul {
     display: flex;
     flex-direction: row;
@@ -172,20 +193,24 @@ h1 {
         font-weight: 500;
         font-size: 1.5rem;
       }
+
       a:hover {
         text-decoration: underline;
         color: $blanco;
       }
     }
   }
+
   .switch {
     background-color: $negro;
     color: white;
+
     &::after {
       background-color: $blanco;
     }
   }
 }
+
 .switch {
   background-color: $negro;
   color: $blanco;
@@ -195,6 +220,7 @@ h1 {
   cursor: pointer;
   display: flex;
   outline: none;
+
   &::after {
     content: "";
     display: block;
@@ -209,14 +235,17 @@ h1 {
     transition: 0.3s ease all;
     box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
   }
+
   &.active {
     background-color: $blanco;
     color: $negro;
+
     &::after {
       right: 0;
       left: unset;
     }
   }
+
   span {
     width: 30px;
     height: 30px;
@@ -233,34 +262,41 @@ h1 {
     background-color: rgb(245, 248, 247, 0.8);
     width: 100%;
   }
+
   .navDesktop {
     display: none;
   }
+
   .navbar {
     display: inline-block;
     width: 100%;
     font-weight: bold;
   }
+
   .navbar-brand {
     font-size: 2rem;
   }
+
   .navbar-nav {
     a {
       font-size: 1.4rem;
       color: $negro;
       font-weight: bold;
     }
+
     a:hover {
       color: $red;
     }
   }
 }
+
 /*main desktop styles*/
 
 .mainDesktop {
   display: flex;
   flex-direction: row;
 }
+
 .perfil {
   width: 600px;
   height: 600px;
@@ -276,18 +312,22 @@ h1 {
   margin-left: 100px;
   margin-top: 250px;
 }
+
 .Text {
   text-align: center;
+
   h6 {
     font-weight: bold;
     font-size: 2rem;
     margin-bottom: 0.2rem;
   }
+
   h2 {
     font-weight: bold;
     font-size: 3.5rem;
     margin-bottom: 1rem;
   }
+
   h3 {
     font-size: 3rem;
     font-weight: bold;
@@ -300,6 +340,7 @@ h1 {
   display: flex;
   flex-direction: column;
 }
+
 .textButtonMain {
   margin-right: 10px;
   width: 180px;
@@ -312,6 +353,7 @@ h1 {
   text-decoration: none;
   color: $negro;
 }
+
 .textButtonMain:hover {
   background-color: $red;
   color: $blanco;
@@ -322,6 +364,7 @@ img {
   width: 60px;
   height: 60px;
 }
+
 .iconButtonMain {
   background-color: transparent;
   border: none;
@@ -329,6 +372,7 @@ img {
   margin-right: 10px;
   width: 180px;
   height: 40px;
+
   img {
     width: 60px;
     height: 60px;
@@ -341,6 +385,7 @@ img {
     margin-top: 20px;
   }
 }
+
 .iconButtonMain:hover {
   cursor: pointer;
 }
@@ -362,14 +407,17 @@ img {
       height: 400px;
     }
   }
+
   .mainInfo {
     margin: auto;
     margin-top: 10px;
   }
+
   .iconButtonMain {
     width: 40px;
     height: 40px;
     margin: 20px;
+
     img {
       margin: auto;
       width: 60px;
@@ -384,11 +432,13 @@ img {
 .sectionAbout {
   display: flex;
   flex-direction: column;
+
   h1 {
     font-size: 4rem;
     align-items: center;
   }
 }
+
 .sectionAbout .divAbout {
   display: flex;
 }
@@ -398,6 +448,7 @@ img {
   flex-direction: column;
   margin-top: 50px;
 }
+
 .perfil2 {
   width: 530px;
   height: 660px;
@@ -407,11 +458,13 @@ img {
 
 .containerEE {
   display: flex;
+
   h3 {
     color: $red;
     font-size: 2rem;
   }
 }
+
 .containerExperience,
 .containerEducation {
   display: flex;
@@ -424,6 +477,7 @@ img {
   align-items: center;
   margin: 30px;
   padding: 20px;
+
   h4 {
     font-size: 1.2rem;
   }
@@ -439,6 +493,7 @@ img {
   color: $negro;
   text-shadow: 2px 1px 2px $negro;
 }
+
 /* about style responsive*/
 
 @media (max-width: 768px) {
@@ -450,22 +505,26 @@ img {
     margin-bottom: 100px;
     padding: 10;
   }
+
   .divAbout {
     display: flex;
     flex-direction: column;
     padding: 20px;
   }
+
   .perfil2 {
     width: 100%;
     height: 100%;
     margin: auto;
   }
+
   .containerEE {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
   }
+
   .containerEducation,
   .containerExperience,
   .containerDescription {
@@ -483,17 +542,21 @@ h1 {
   margin-top: 2rem;
   margin-bottom: 4rem;
 }
+
 .titleExperience {
   margin-bottom: 1rem;
 }
+
 .about-containers {
   display: flex;
   flex-direction: row;
   text-align: center;
+
   h2 {
     font-size: 3rem;
   }
 }
+
 .details-container {
   display: flex;
   flex-direction: column;
@@ -514,9 +577,11 @@ h1 {
   gap: 2.5rem;
   justify-content: space-around;
   font-weight: bold;
+
   article:hover {
     color: $red;
   }
+
   .round-logo {
     border-radius: 50%;
   }
@@ -532,6 +597,7 @@ h1 {
 
 /*experience responsive style*/
 @media (max-width: 1300px) {
+
   #Experience,
   .about-containers {
     display: flex;
@@ -540,6 +606,7 @@ h1 {
     padding: 20px;
     height: 100%;
   }
+
   .article-container {
     width: 100%;
     height: 100%;
@@ -550,83 +617,97 @@ h1 {
     justify-content: center;
   }
 }
-/*style projects*/
 
-.project {
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-  height: 530px;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 10%;
-  padding: 25px;
-  background-color: $blanco;
-  color: $red;
+/*style projects*/
+.sectionProject {
+  position: relative;
+  height: 100%;
+  font-size: 14px;
 }
+
+
+.swiper {
+  width: 100%;
+  padding: 150px 0 50px 0;
+}
+
+.swiper-slide {
+  width: 300px;
+  height: 500px;
+  background-color: #323232;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  text-align: center;
+}
+
+.project-content {
+  justify-content: center;
+}
+
+.project-txt {
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.project-txt span {
+  font-size: 25px;
+  color: #FFB900;
+  font-weight: bold;
+}
+
+.project-txt h3 {
+  font-size: 20px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.project-txt p {
+  font-size: 14px;
+  color: #C4C4C4;
+}
+
 .project-img {
-  h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    width: 100%;
-    height: 80px;
-  }
-  img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10%;
-    max-height: 250px;
-  }
+  text-align: center; 
 }
-.project-buttons {
-  a {
-    width: 100%;
-    height: 25px;
-    background-color: $red;
-    border-radius: 1rem;
-    padding: 10px 20px;
-    color: $blanco;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.3rem;
-  }
-  a:hover {
-    background-color: $negro;
-    color: $blanco;
-    cursor: pointer;
-  }
+
+.projectImg {
+  width: 100%;
+  border-radius: 10px;
+  min-height: 250px;
+  max-height: 270px;
 }
+
+.containerButtonProject {
+  display: flex;
+  gap: 10px;
+
+}
+
+.btnProject {
+  display: inline-block;
+  width: 200px;
+  padding: 13px 25px;
+  border: 1px solid #FFB900;
+  border-radius: 25px;
+  color: #FFB900;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.btnProject:hover {
+  background-color: #000;
+}
+
 /*style projects responsive*/
-@media (max-width: 1300) {
-  .sectionProjects {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: 100%;
-  }
-}
-@media (max-width: 768px) {
-  .sectionProjects {
-    width: 100%;
-    height: auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-  .itemContainerId {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .project {
-    margin: 40px;
-  }
-}
+@media (max-width: 1300) {}
+
+@media (max-width: 768px) {}
+
 /*style contact*/
 .contactSection {
   height: 90vh;
 }
+
 .containerContact {
   display: flex;
   justify-content: center;
@@ -637,15 +718,18 @@ h1 {
   padding: 10px;
   margin: auto;
   list-style: none;
+
   li {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
+
     img {
       margin-right: 5px;
     }
   }
+
   a {
     font-size: 1.2rem;
     font-weight: bold;
@@ -663,6 +747,7 @@ h1 {
     height: 100%;
     padding: 10px;
   }
+
   .containerContact {
     display: flex;
     flex-direction: column;
@@ -679,11 +764,15 @@ h1 {
     text-align: center;
   }
 }
+
+
+
 .footer {
   display: flex;
   justify-content: center;
   position: sticky;
   top: 0;
+
   h3 {
     color: $negro;
     font-weight: bold;

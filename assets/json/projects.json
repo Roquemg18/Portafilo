@@ -1,23 +1,35 @@
 [
     {   
         "title": "Project Ecommerce",
-        "img":"https://www.ecommercenews.pe/wp-content/uploads/2021/10/servicio-ecommerce-subir-ventas.jpg",
+        "description": "Project de un Ecommerce hecho con React  ",
+        "img":"assets/img/projects/Ecommers.png",
         "urlGitHub": "https://github.com/Roquemg18/project-1-ecommerce",
         "urlServer": "https://project-1-ecommerce-9as1.vercel.app/",
         "id":"1"
     },
     {
         "title": "Chat real time",
-        "img":"https://i.pinimg.com/736x/e2/0e/43/e20e432d67f76a3c4c5c10fbce3e7de0.jpg",
+        "description": "Projecto de un chat hecho con React,socket.io y Nodo.js",
+        "img":"assets/img/projects/chatRealTime.png",
         "id":"2",
         "urlGitHub":"https://github.com/Roquemg18/project-2-chatRealTime.git",
         "urlServer":"https://chat-realtime-a6y0.onrender.com"
     },
     {
-        "title": "Project Calculator",
-        "img":"https://img.freepik.com/vector-premium/empresaria-calculadora-estimacion-costos-documento-proyecto-estimacion-costos-proyecto-calcular-presupuestos-o-recursos-completar-tareas-planes-financieros-facturas-o-impuestos-costo-o-concepto-prestamo_610956-1630.jpg?w=2000",
+        "title": "Sistema de gestion de supermercado",
+        "description":"Projecto en JAVA para la gestion de un supermercado",
+        "img":"assets/img/projects/sistemaDeGestion.png",
         "urlGitHub": "https://github.com/",
         "urlServer": "https://github.com/",
         "id":"3"
+    },
+    {
+        "title": "Juego de busca minas",
+        "description":"Projecto de juego de busca minas hecho en C",
+        "img":"assets/img/projects/buscaMinas.png",
+        "urlGitHub": "https://github.com/",
+        "urlServer": "https://github.com/",
+        "id":"4"
     }
+    
 ]

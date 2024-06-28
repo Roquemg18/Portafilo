@@ -24,7 +24,6 @@ body.dark .perfil {
 }
 body.dark img {
   background-color: white;
-  border-radius: 50%;
 }
 body.dark nav a {
   color: white;
@@ -528,76 +527,84 @@ h1 {
   }
 }
 /*style projects*/
-.project {
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-  height: 530px;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 10%;
-  padding: 25px;
-  background-color: white;
-  color: #aa1111;
-}
-
-.project-img h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  width: 100%;
-  height: 80px;
-}
-.project-img img {
-  width: 100%;
+.sectionProject {
+  position: relative;
   height: 100%;
-  border-radius: 10%;
-  max-height: 250px;
+  font-size: 14px;
 }
 
-.project-buttons a {
+.swiper {
   width: 100%;
-  height: 25px;
-  background-color: #aa1111;
-  border-radius: 1rem;
-  padding: 10px 20px;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.3rem;
+  padding: 150px 0 50px 0;
 }
-.project-buttons a:hover {
-  background-color: black;
-  color: white;
-  cursor: pointer;
+
+.swiper-slide {
+  width: 300px;
+  height: 500px;
+  background-color: #323232;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  text-align: center;
+}
+
+.project-content {
+  justify-content: center;
+}
+
+.project-txt {
+  flex-basis: 50%;
+  text-align: center;
+}
+
+.project-txt span {
+  font-size: 25px;
+  color: #FFB900;
+  font-weight: bold;
+}
+
+.project-txt h3 {
+  font-size: 20px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.project-txt p {
+  font-size: 14px;
+  color: #C4C4C4;
+}
+
+.project-img {
+  text-align: center;
+}
+
+.projectImg {
+  width: 100%;
+  border-radius: 10px;
+  min-height: 250px;
+  max-height: 270px;
+}
+
+.containerButtonProject {
+  display: flex;
+  gap: 10px;
+}
+
+.btnProject {
+  display: inline-block;
+  width: 200px;
+  padding: 13px 25px;
+  border: 1px solid #FFB900;
+  border-radius: 25px;
+  color: #FFB900;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.btnProject:hover {
+  background-color: #000;
 }
 
 /*style projects responsive*/
-@media (max-width: 1300) {
-  .sectionProjects {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: 100%;
-  }
-}
-@media (max-width: 768px) {
-  .sectionProjects {
-    width: 100%;
-    height: auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-  .itemContainerId {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .project {
-    margin: 40px;
-  }
-}
 /*style contact*/
 .contactSection {
   height: 90vh;
