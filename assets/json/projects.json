@@ -19,16 +19,16 @@
         "title": "Sistema de gestion de supermercado",
         "description":"Projecto en JAVA para la gestion de un supermercado",
         "img":"assets/img/projects/sistemaDeGestion.png",
-        "urlGitHub": "https://github.com/",
-        "urlServer": "https://github.com/",
+        "urlGitHub": "https://github.com/Roquemg18/storeManagementSystem",
+        "urlServer": "https://github.com/Roquemg18/storeManagementSystem",
         "id":"3"
     },
     {
-        "title": "Juego de busca minas",
+        "title": "Casino mines game",
         "description":"Projecto de juego de busca minas hecho en C",
         "img":"assets/img/projects/buscaMinas.png",
-        "urlGitHub": "https://github.com/",
-        "urlServer": "https://github.com/",
+        "urlGitHub": "https://github.com/Roquemg18/Project-Casino-Mines-Game",
+        "urlServer": "https://github.com/Roquemg18/Project-Casino-Mines-Game",
         "id":"4"
     }
     
