@@ -1,0 +1,86 @@
+[
+    {
+        "id":1,
+        "name":"HTML",
+        "img":"./assets/img/logo-tecnologia/png-logo-html.png",
+        "type":"frontend"
+
+    },
+    {
+        "id":2,
+        "name":"css",
+        "img":"./assets/img/logo-tecnologia/png-logo-css.png",
+        "type": "frontend"
+
+    },
+    {
+        "id":3,
+        "name":"SASS",
+        "img":"./assets/img/logo-tecnologia/sass-logo.png",
+        "type":"frontend"
+
+    },
+    {
+        "id":4,
+        "name":"JavaScript",
+        "img":"./assets/img/logo-tecnologia/javascript-logo.png",
+        "type":"frontend"
+
+    },
+    {
+        "id":5,
+        "name":"React",
+        "img":"./assets/img/logo-tecnologia/React-logo.png",
+        "type":"frontend"
+
+    },
+    {
+        "id":6,
+        "name":"Bootstrap",
+        "img":"./assets/img/logo-tecnologia/bootstrap-5-logo.jpg",
+        "type":"frontend"
+
+    },
+    {
+        "id":7,
+        "name":"Node JS",
+        "img":"./assets/img/logo-tecnologia/nodejs-inner.png",
+        "type":"backend"
+
+    },
+    {
+        "id":8,
+        "name":"Express Js",
+        "img":"./assets/img/logo-tecnologia/express-js.png",
+        "type":"backend"
+
+    },
+    {
+        "id":9,
+        "name":"Neest JS",
+        "img":"./assets/img/logo-tecnologia/nestJS-logo.png",
+        "type":"backend"
+
+    },
+    {
+        "id":10,
+        "name":"MongoDB",
+        "img":"./assets/img/logo-tecnologia/mongodb.svg",
+        "type":"backend"
+
+    },
+    {
+        "id":11,
+        "name":"Firebase",
+        "img":"./assets/img/logo-tecnologia/firebase-logo.png",
+        "type":"backend"
+
+    },
+    {
+        "id":12,
+        "name":"Git",
+        "img":"./assets/img/logo-tecnologia/git-logo.png",
+        "type":"backend"
+
+    }
+]

@@ -39,19 +39,23 @@ function generateProductHTML(projects) {
                     <h3>${project.title}</h3>
                     <p>${project.description}</p>
                 </div>
+                <div class="project-technologies">
+                  ${project.technologies.map(tech => `
+                    <span class="tech ${tech.class}">${tech.name}</span>
+                  `).join('')}
+                </div>
                 <div class="project-img">
                     <img class="projectImg" src="${project.img}" />
                 </div>
             </div>
             <div class="containerButtonProject">
-                <a href="${project.urlGitHub}" class="btnProject">gitHub</a>
-                <a href="${project.urlServer}" class="btnProject">server</a>
+                <a href="${project.urlGitHub}" class="btnProject">GitHub</a>
+                <a href="${project.urlServer}" class="btnProject">Server</a>
             </div>
     `;
     container.append(newProject);
   });
 }
-
 function configSwiper() {
   // Inicializar Swiper
   var swiper = new Swiper(".mySwiper", {

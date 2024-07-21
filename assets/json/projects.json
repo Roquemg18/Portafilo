@@ -1,35 +1,51 @@
 [
-    {   
+    {
+        "id": "1",
         "title": "Project Ecommerce",
-        "description": "Project de un Ecommerce hecho con React  ",
-        "img":"assets/img/projects/Ecommers.png",
+        "description": "Ecommerce inspirado en la página de Nike. Incluye página de inicio, carrito de compras, login, filtros de productos, buscador y detalles de cada producto.",
+        "img": "assets/img/projects/Ecommers.png",
         "urlGitHub": "https://github.com/Roquemg18/project-1-ecommerce",
         "urlServer": "https://project-1-ecommerce-9as1.vercel.app/",
-        "id":"1"
+        "technologies": [
+            { "name": "React", "class": "react" },
+            { "name": "JavaScript", "class": "javascript" },
+            { "name": "tailwindcss", "class": "tailwindcss"}
+        ]
     },
     {
+        "id": "2",
         "title": "Chat real time",
-        "description": "Projecto de un chat hecho con React,socket.io y Nodo.js",
-        "img":"assets/img/projects/chatRealTime.png",
-        "id":"2",
-        "urlGitHub":"https://github.com/Roquemg18/project-2-chatRealTime.git",
-        "urlServer":"https://chat-realtime-a6y0.onrender.com"
+        "description": "Backend de un chat con frontend simple, que incluye un chat general, creación de chats privados y búsqueda de grupos de chat",
+        "img": "assets/img/projects/chatRealTime.png",
+        "urlGitHub": "https://github.com/Roquemg18/project-2-chatRealTime.git",
+        "urlServer": "https://chat-realtime-a6y0.onrender.com",
+        "technologies": [
+            { "name": "React", "class": "react" },
+            { "name": "Socket.io", "class": "socketio" },
+            { "name": "Node.js", "class": "nodejs" }
+        ]
     },
     {
+        "id": "3",
         "title": "Sistema de gestion de supermercado",
-        "description":"Projecto en JAVA para la gestion de un supermercado",
-        "img":"assets/img/projects/sistemaDeGestion.png",
+        "description": "Proyecto final de Programación 2. Gestión de productos, descuentos y clientes premium con interfaz Swing y listado de inventario.",
+        "img": "assets/img/projects/sistemaDeGestion.png",
         "urlGitHub": "https://github.com/Roquemg18/storeManagementSystem",
         "urlServer": "https://github.com/Roquemg18/storeManagementSystem",
-        "id":"3"
+        "technologies": [
+            { "name": "Java", "class": "java" },
+            { "name": "Swing", "class": "swing" }
+        ]
     },
     {
+        "id": "4",
         "title": "Casino mines game",
-        "description":"Projecto de juego de busca minas hecho en C",
-        "img":"assets/img/projects/buscaMinas.png",
+        "description": "Proyecto final de Programación 1.Que incluye minas ajustables, ganancias basadas en apuestas y ranking de los jugadores con mayores ganancias, implementado con archivos.",
+        "img": "assets/img/projects/buscaMinas.png",
         "urlGitHub": "https://github.com/Roquemg18/Project-Casino-Mines-Game",
         "urlServer": "https://github.com/Roquemg18/Project-Casino-Mines-Game",
-        "id":"4"
+        "technologies": [
+            { "name": "C", "class": "c" }
+        ]
     }
-    
 ]

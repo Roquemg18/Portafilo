@@ -22,8 +22,9 @@ body.dark .perfil {
   border-radius: 50%;
   border: none;
 }
-body.dark img {
+body.dark .containerButtonMain img {
   background-color: white;
+  border-radius: 50%;
 }
 body.dark nav a {
   color: white;
@@ -48,18 +49,23 @@ body.dark section .containerExperience h4,
 body.dark section .containerEducation h4 {
   color: white;
 }
-body.dark section .article-container {
-  border: 1px solid white;
-}
-body.dark section .article-container h3,
-body.dark section .article-container p {
+body.dark section .article-container h3 {
+  margin-top: 1rem;
   color: white;
+}
+body.dark section article:hover h3 {
+  color: #aa1111;
 }
 body.dark section .containerContact {
   border: 1px solid white;
 }
 body.dark section .containerContact a {
   color: white;
+}
+body.dark section .containerContact img {
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 5px;
 }
 body.dark section .project-img h1 {
   color: #aa1111;
@@ -129,13 +135,13 @@ h1.dark {
 }
 .abajo a {
   font-size: 3rem;
-  margin-top: 10px;
   color: white;
 }
 .abajo ul {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
   text-decoration: none;
   list-style: none;
@@ -144,7 +150,7 @@ h1.dark {
 .abajo ul li a {
   text-decoration: none;
   color: black;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 1.5rem;
 }
 .abajo ul li a:hover {
@@ -359,6 +365,7 @@ img {
 .sectionAbout h1 {
   font-size: 4rem;
   align-items: center;
+  margin-bottom: 0;
 }
 
 .sectionAbout .divAbout {
@@ -453,7 +460,6 @@ img {
 /*experience style*/
 h1 {
   font-size: 4rem;
-  margin-top: 2rem;
   margin-bottom: 4rem;
 }
 
@@ -463,11 +469,9 @@ h1 {
 
 .about-containers {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   text-align: center;
-}
-.about-containers h2 {
-  font-size: 3rem;
+  gap: 8rem;
 }
 
 .details-container {
@@ -476,15 +480,16 @@ h1 {
   margin: auto;
   font-size: 2rem;
 }
+.details-container h2 {
+  font-size: 3rem;
+}
 
 .article-container {
-  width: 600px;
+  width: 100%;
   height: 100%;
   padding: 20px;
-  border: 1px solid black;
-  border-radius: 1rem;
   display: flex;
-  text-align: initial;
+  text-align: center;
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2.5rem;
@@ -535,46 +540,78 @@ h1 {
 
 .swiper {
   width: 100%;
-  padding: 150px 0 50px 0;
+  padding: 50px 0 50px 0;
 }
 
 .swiper-slide {
-  width: 300px;
-  height: 500px;
+  width: 450px;
+  height: 700px;
   background-color: #323232;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
 }
 
 .project-content {
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
 }
 
 .project-txt {
-  flex-basis: 50%;
-  text-align: center;
+  margin-bottom: 20px;
+  flex: 1;
+  max-height: 150px;
 }
 
 .project-txt span {
   font-size: 25px;
-  color: #FFB900;
+  color: #ffb900;
   font-weight: bold;
 }
 
 .project-txt h3 {
-  font-size: 20px;
-  color: #FFFFFF;
+  font-size: 26px;
+  font-weight: bold;
+  color: #ffffff;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .project-txt p {
-  font-size: 14px;
-  color: #C4C4C4;
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.project-technologies {
+  margin: 20px 0;
+}
+
+.tech {
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  display: inline-block;
 }
 
 .project-img {
   text-align: center;
+  margin-bottom: 20px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .projectImg {
@@ -587,27 +624,63 @@ h1 {
 .containerButtonProject {
   display: flex;
   gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .btnProject {
   display: inline-block;
-  width: 200px;
   padding: 13px 25px;
-  border: 1px solid #FFB900;
+  border: 1px solid #ffb900;
   border-radius: 25px;
-  color: #FFB900;
+  color: #ffb900;
   text-decoration: none;
-  margin-top: 10px;
 }
 
 .btnProject:hover {
   background-color: #000;
 }
 
+.react {
+  background-color: #61dafb;
+  color: #000;
+}
+
+.javascript {
+  background-color: #f7df1e;
+  color: black;
+}
+
+.tailwindcss {
+  background-color: rgb(15, 23, 42);
+  color: #fff;
+}
+
+.socketio {
+  background-color: #010101;
+}
+
+.nodejs {
+  background-color: #68a063;
+}
+
+.java {
+  background-color: #fff;
+  color: red;
+}
+
+.swing {
+  background-color: #ff7f00;
+}
+
+.c {
+  background-color: #101DE5;
+}
+
 /*style projects responsive*/
 /*style contact*/
 .contactSection {
-  height: 90vh;
+  height: 85vh;
 }
 
 .containerContact {
