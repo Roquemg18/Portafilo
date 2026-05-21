@@ -1,0 +1,59 @@
+.card {
+  display: grid;
+  justify-items: center;
+  gap: 20px;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: clamp(28px, 5vw, 48px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  background: var(--white);
+  text-align: center;
+  box-shadow: 0 22px 64px rgba(0, 0, 0, 0.07);
+}
+
+.card :global(.sectionHeader) {
+  margin-bottom: 0;
+}
+
+.text {
+  max-width: 590px;
+  color: rgba(0, 0, 0, 0.73);
+  font-size: 1.06rem;
+  line-height: 1.72;
+}
+
+.email {
+  color: var(--black);
+  font-size: clamp(1.05rem, 4vw, 1.45rem);
+  font-weight: 850;
+  text-decoration-color: var(--red);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+  overflow-wrap: anywhere;
+  transition: color 180ms ease;
+}
+
+.email:hover,
+.email:focus-visible {
+  color: var(--red);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.location {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 750;
+}
+
+.location svg {
+  color: var(--red);
+}

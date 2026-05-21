@@ -1,0 +1,85 @@
+.groups {
+  display: grid;
+  gap: 34px;
+}
+
+.group {
+  display: grid;
+  gap: 16px;
+}
+
+.group > h3 {
+  color: var(--black);
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+}
+
+.group > h3::after {
+  display: block;
+  width: 46px;
+  height: 3px;
+  margin-top: 8px;
+  background: var(--red);
+  content: '';
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.card {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  min-height: 138px;
+  padding: 18px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.05);
+}
+
+.logoBox {
+  display: grid;
+  width: 58px;
+  height: 58px;
+  margin-bottom: 14px;
+  place-items: center;
+}
+
+.logoBox img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.logoBox svg {
+  width: 44px;
+  height: 44px;
+  color: var(--black);
+}
+
+.card h3 {
+  color: var(--black);
+  font-size: 0.95rem;
+  font-weight: 750;
+  text-align: center;
+}
+
+@media (min-width: 700px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+  }
+}
+
+@media (min-width: 1020px) {
+  .grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .groups .group:nth-child(2) .grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
